@@ -1,0 +1,210 @@
+.order {
+    padding: 20px 40px;
+    width: 80%;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.order-header h3 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+}
+
+.refresh-btn {
+    padding: 9px 18px;
+    background-color: #ff4c24;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.refresh-btn:hover {
+    background-color: #e03a14;
+}
+
+.no-orders {
+    padding: 40px;
+    text-align: center;
+    background: #fdfdfd;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    color: #777;
+    font-size: 16px;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1.3fr 1.2fr;
+    align-items: start;
+    gap: 25px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4a5568;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.order-parcel-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.order-item-food {
+    font-weight: 600;
+    color: #2d3748;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.order-item-name {
+    font-weight: 600;
+    color: #ff4c24;
+    margin-bottom: 4px;
+}
+
+.order-item-address {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #718096;
+}
+
+.order-item-phone {
+    font-size: 13px;
+    color: #4a5568;
+    margin-bottom: 4px;
+}
+
+.order-item-date {
+    font-size: 12px;
+    color: #a0aec0;
+}
+
+.order-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order-items-count {
+    font-size: 13px;
+}
+
+.order-amount {
+    font-size: 18px;
+    color: #2d3748;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.badge.paid {
+    background-color: #def7ec;
+    color: #03543f;
+}
+
+.badge.cod {
+    background-color: #fef08a;
+    color: #854d0e;
+}
+
+.badge.pending {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.mark-paid-btn {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: fit-content;
+}
+
+.mark-paid-btn:hover {
+    background: #15803d;
+}
+
+.admin-receipt-btn {
+    background: #f0f9ff;
+    color: #0284c7;
+    border: 1px solid #bae6fd;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.admin-receipt-btn:hover {
+    background: #e0f2fe;
+}
+
+.order-status-control {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.order-status-control label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #718096;
+}
+
+.status-select {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 9px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.status-select:focus {
+    border-color: #ff4c24;
+}
+
+@media (max-width: 1000px) {
+    .order {
+        width: 100%;
+        padding: 15px;
+    }
+    .order-item {
+        font-size: 12px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+    .order-parcel-icon {
+        width: 36px;
+        height: 36px;
+    }
+}

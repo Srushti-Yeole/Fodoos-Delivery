@@ -1,0 +1,348 @@
+.my-orders {
+  margin: 40px 0px;
+}
+
+.my-orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.my-orders-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.refresh-orders-btn {
+  padding: 8px 18px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.refresh-orders-btn:hover {
+  background-color: #ff4c24;
+  color: white;
+  border-color: #ff4c24;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-orders-order {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s;
+}
+
+.my-orders-order:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.order-main-row {
+  display: grid;
+  grid-template-columns: 0.4fr 2fr 0.8fr 0.8fr 1.3fr 1.1fr 1.6fr;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.parcel-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.order-items-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-food-summary {
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.order-date-text {
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.order-price-col {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.order-count-col {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.payment-pill {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-align: center;
+  width: fit-content;
+}
+
+.payment-pill.paid {
+  background-color: #def7ec;
+  color: #03543f;
+}
+
+.payment-pill.cod {
+  background-color: #fef08a;
+  color: #854d0e;
+}
+
+.payment-pill.pending {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.order-status-col {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.food-processing {
+  background-color: #f59e0b;
+}
+
+.status-dot.out-for-delivery {
+  background-color: #0284c7;
+}
+
+.status-dot.delivered {
+  background-color: #16a34a;
+}
+
+.status-dot.cancelled {
+  background-color: #dc2626;
+}
+
+/* Action Buttons */
+.order-actions-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pay-now-btn {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3);
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.pay-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(22, 163, 74, 0.4);
+}
+
+.view-receipt-btn {
+  background-color: #f0f9ff;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.view-receipt-btn:hover {
+  background-color: #e0f2fe;
+  border-color: #0284c7;
+}
+
+.track-order-btn {
+  border: 1px solid #cbd5e1;
+  padding: 7px 12px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.track-order-btn:hover,
+.track-order-btn.active {
+  background-color: #ff4c24;
+  color: white;
+  border-color: #ff4c24;
+}
+
+/* Timeline tracking styles */
+.tracking-timeline-box {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed #e2e8f0;
+  animation: fadeIn 0.3s ease;
+}
+
+.tracking-timeline-box h4 {
+  margin: 0 0 20px 0;
+  color: #1e293b;
+  font-size: 15px;
+}
+
+.tracking-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  min-width: 100px;
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+  transition: all 0.3s;
+}
+
+.step-item.completed .step-circle {
+  background-color: #16a34a;
+  color: white;
+}
+
+.step-item.current .step-circle {
+  background-color: #ff4c24;
+  color: white;
+  box-shadow: 0 0 0 4px rgba(255, 76, 36, 0.2);
+}
+
+.step-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 2px 0;
+}
+
+.step-sub {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.step-line {
+  flex: 1;
+  height: 3px;
+  background-color: #e2e8f0;
+  margin: 0 10px;
+  margin-bottom: 24px;
+  transition: all 0.3s;
+}
+
+.step-line.active {
+  background-color: #16a34a;
+}
+
+.no-orders-box,
+.orders-unauth {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8fafc;
+  border-radius: 16px;
+  border: 1px dashed #cbd5e1;
+}
+
+.no-orders-icon {
+  font-size: 54px;
+  margin-bottom: 12px;
+}
+
+.start-order-btn,
+.auth-btn {
+  margin-top: 18px;
+  padding: 12px 28px;
+  background-color: #ff4c24;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.start-order-btn:hover,
+.auth-btn:hover {
+  background-color: #e03a14;
+}
+
+@media (max-width: 990px) {
+  .order-main-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .order-actions-col {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

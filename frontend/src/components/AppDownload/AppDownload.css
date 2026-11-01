@@ -1,0 +1,64 @@
+.app-download {
+  margin: auto auto;
+  margin-top: 100px;
+  font-size: max(3vw, 20px);
+  text-align: center;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.highlight-text {
+  color: #ff4c24;
+  font-weight: 800;
+}
+
+.app-download-platforms {
+  display: flex;
+  justify-content: center;
+  gap: max(2vw, 15px);
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.store-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.store-badge:hover {
+  transform: translateY(-4px);
+  background: #1e293b;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.badge-icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.badge-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.badge-small {
+  font-size: 10px;
+  font-weight: 500;
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+}
+
+.badge-large {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
